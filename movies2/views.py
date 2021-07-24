@@ -5,10 +5,6 @@ from django.views import View
 
 from movies2.models import Actor, Movie
 
-# mvtitle = []
-# for actor_movie in actor.actormovie_set.all():
-#     mvtitle.append(actor_movie.movie.title)
-
 class ActorView(View):
     def get(self, request):
         actors = Actor.objects.all()        
